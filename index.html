@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="fixed-top d-flex justify-content-center navbar p-2">
+        <a href="index.html" class="p-0 navbar-brand d-none d-lg-block">Movie Finder</a>
+        <form id="search-form" class="form-inline">
+            <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+        </form>
+    </nav>
+    
+    <section>
+        <div class="container-fluid mt-5 p-5">
+            <div id="movie-content" class="row d-flex justify-content-center">
+                <!-- JavaScript will populate movies here -->
+            </div>
+        </div>
+    </section>
+    
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a id="previous" class="btn page-link" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item">
+                <a id="next" class="btn page-link">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

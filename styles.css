@@ -1,0 +1,138 @@
+:root {
+    --color1: #708ed2;
+    --color2: #272532;
+    --color3: #ebe5e2;
+    --color4: #83cfdf;
+    --color5: #13688c;
+    --color6: #373b69;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: var(--color6) !important;
+    font-family: 'Arial', sans-serif;
+}
+
+nav {
+    background: #6065ac;
+    transition: background 0.3s ease;
+}
+
+nav a {
+    color: #ebe5e2;
+    font-size: 2.5rem !important;
+}
+
+nav:hover {
+    background: #505a9a;
+}
+
+.movie-card {
+    padding: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 0.5rem;
+    background: var(--color4);
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.movie-description {
+    background: var(--color5);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.movie-title {
+    color: var(--color3);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.movie-vote {
+    background: var(--color2);
+    color: orange;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.movie-img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    overflow: hidden;
+    max-height: 100% !important;
+    transition: transform 0.3s;
+}
+
+.movie-img:hover {
+    transform: scale(1.1);
+}
+
+.comments {
+    margin-top: 15px;
+}
+
+.comment-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.comment-input:focus {
+    border-color: var(--color1);
+    outline: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--color1);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#watchlist {
+    margin-top: 40px;
+}
+
+.watchlist-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    background-color: var(--color1);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.pagination .page-link:hover {
+    background-color: #218838;
+}
